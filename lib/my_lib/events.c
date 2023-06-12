@@ -45,6 +45,7 @@ static void handleMouseMovement(SDL_Event event){
                 }
             // catch pokemon
             show_inventory(username);
+            
 
         }else if(event.button.x >= 700 && event.button.y >= 570){
             printf("buy a potion\n");

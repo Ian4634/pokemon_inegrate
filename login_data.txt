@@ -1,4 +1,4 @@
 eason 0000 100 0 0 flower ibu
-ian 4634 2 900 3 pikachu gengar
-magikarp 0 0 0 0
+ian 4634 100 50 2 flower flower pikachu
+new 1111 100 50 0 mud
 end-of-file

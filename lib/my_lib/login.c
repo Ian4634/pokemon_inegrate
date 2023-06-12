@@ -3,22 +3,17 @@
 #include <string.h>
 #include <my_headers/main.h> // sdl functions
 #include <my_headers/variables.h> // definitions of windows, etc. 
-
+#include <my_headers/player_source.h>
 
 #define PASSWORD_SIZE 50
 #define FILENAME "login_data.txt"
 
 static void showOptions();
 
-static void register_user(const char *username, const char *password) {
-    FILE *file = fopen(FILENAME, "a");
-    if (file == NULL) {
-        printf("Fail to read the data\n");
-        exit(1);
-    }
-    
-    fprintf(file, "%s %s 100 0 0\n", username, password);
-    fclose(file);
+static void register_user(char *username, char *password) {
+    player_source_init();
+    make_new_player(username, password);
+    rewrite();
 }
 
 static int login(const char *username, const char *password) {

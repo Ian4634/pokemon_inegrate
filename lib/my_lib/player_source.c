@@ -82,6 +82,15 @@ Player *player_lookup(char *name){
 
 Player *player_delete(char *name);
 // eason 0000 100 0 0 flower ibu flower
+void make_new_player(char *name, char *password){
+    Player *new_player = malloc(sizeof(Player));
+    strcpy(new_player->name, name);
+    strcpy(new_player->password, password);
+    new_player->blood = 100;
+    new_player->coin = 0;
+    new_player->potion = 0;
+    add_player(new_player);
+}
 static Player *create(FILE *f){
 
     Player *new_player = malloc(sizeof(Player));
@@ -169,6 +178,7 @@ void rewrite(){
             fprintf(out,"%s %s %d %d %d", cur->name, cur->password, cur->blood, cur->coin, cur->potion);
             for(int a=0;a<MAX_POKEMONS && cur->pokemons[a] != NULL; a++){
                 fprintf(out," %s", cur->pokemons[a]);
+                printf(" %s", cur->pokemons[a]);
             }
             fprintf(out, "\n");
         }

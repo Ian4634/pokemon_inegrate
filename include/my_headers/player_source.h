@@ -84,6 +84,8 @@ Player *player_lookup(char *name);
 
 Player *player_delete(char *name);
 
+void make_new_player(char *name, char *password);
+
 void add_minus_blood(Player *p, int x);
 void add_minus_potion(Player *p, int x);
 void add_minus_coin(Player *p, int x);
