@@ -1,0 +1,7 @@
+gcc main.o ./lib/my_lib/variables.o -L ./lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image  -o image.exe
+
+# if i put the variables.o in the end, it would get an error
+   ./lib/my_lib/variables.o:variables.c:(.text+0x36): undefined reference to `SDL_CreateWindow'
+
+# if the linker encounter a extern variable in main, it will look into other object files to find definition
+# this is why the variable.o is needed in the linking process

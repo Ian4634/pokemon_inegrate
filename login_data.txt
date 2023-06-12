@@ -1,0 +1,4 @@
+eason 0000 100 0 0 flower ibu
+ian 4634 2 900 3 pikachu gengar
+magikarp 0 0 0 0
+end-of-file

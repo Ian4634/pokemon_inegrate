@@ -1,0 +1,3 @@
+  --int handleEvents();
+    identifies the event type and call other functions to perform operations on it.
+    other functions are defined in event.c. 

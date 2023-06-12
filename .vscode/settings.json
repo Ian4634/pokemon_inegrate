@@ -1,0 +1,13 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "variables.h": "c",
+        "main.h": "c",
+        "events.h": "c",
+        "sdl_image.h": "c",
+        "sdl_ttf.h": "c",
+        "login.h": "c",
+        "inventory.h": "c",
+        "player_source.h": "c"
+    }
+}

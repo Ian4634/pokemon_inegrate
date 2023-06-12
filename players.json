@@ -1,0 +1,10 @@
+[
+    {
+        "name":"Ian",
+        "password": 4634,
+        "pokemons":null,
+        "level": 1,
+        "attack_boosters":0,
+        "health_boosters":0
+    }
+]

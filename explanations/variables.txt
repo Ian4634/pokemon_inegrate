@@ -1,0 +1,58 @@
+<< WINDOW RELATED >>
+  --extern SDL_Window *window;
+    supposidly allows the main source file to have access and reference to window.
+
+  --void defineWindow();
+    creates a window variable which is a pointer to a SDL window.
+
+  --SDL_Window *getWindow();
+    returns the window variable(pointer to SDL window).
+
+<< RENDERER RELATED >>
+  --extern SDL_Renderer *renderer;
+    supposidly allows the main source file to have access and reference to renderer.
+
+  --void defineRenderer();
+    creates a renderer variable(a pointer to SDL render).
+
+  --SDL_Renderer *getRenderer();
+    returns the renderer variable(a pointer to SDL render).
+
+<< TEXTURE RELATED >>
+  && player_texture &&
+  --extern SDL_Texture *player_texture;
+    supposidly allows the main source file to have access and reference to player_texture.
+
+  --void definePlayerTexture();
+    creates a player_texture variable(a pointer to SDL texture).
+
+  --SDL_Texture *getPlayerTexture();
+    returns the player_texture variable(a pointer to SDL texture).
+
+  && map_texture &&
+  --extern SDL_Texture *map_texture;
+    supposidly allows the main source file to have access and reference to map_texture.
+
+  --void defineMapTexture();
+    creates a map_texture variable(a pointer to SDL texture).
+
+  --SDL_Texture *getMapTexture();
+    returns the map_texture variable.
+
+  && playerDestRect &&
+  --extern SDL_Rect playerDestRect;
+    supposidly allows the main source file to have access and reference to playerDestRect.
+
+  --void definePlayerDestRect();
+    creates a playerDestRect variable which is a structure.
+
+  --SDL_Rect *getPlayerDestRect();
+    returns the pointer to the playerDestRect structure.
+
+<< OTHER FUNCTIONS >>
+  --void initialize();
+    initializes SDL2 & TTF, creates the window and renderer by calling the define functions i wrote.
+
+  --void player_mapInit();
+    gives definition to the player and map texture, and renders them to the screen. By calling 
+    SDL_RenderCopy() && SDL_RenderPresent().
